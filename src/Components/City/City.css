@@ -1,0 +1,152 @@
+.city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    margin-bottom: 1rem;
+    width: auto;
+}
+
+.container-city {
+    background-color: white;
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 1s;
+    
+}
+
+
+
+.return{
+    margin: 10px;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+.return-btn {
+    background-color:  rgb(156, 0, 0);
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    min-height: 2rem;
+    width: 3rem;
+    transition: 1s;
+    
+}
+
+.return-btn:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+.container:hover {
+    transform: translateY(-3px);
+}
+
+.container-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+   /*  border: 1px solid black; */
+}
+
+.hr{
+    
+    border: 1px solid rgb(211, 211, 211);
+    width: 80%;
+}
+
+.container-bottom-city {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    margin-top: 0;
+
+}
+
+.title-city{
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    transition: 1s;
+    color: #2D3047;
+}
+
+.title-city:hover {
+    color: #2D3047;
+    
+}
+
+
+
+.temp-exact{
+    transition: .2s;
+    cursor:default;   
+    padding: .3rem;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+}
+
+.temp-exact:hover {
+    transform: translateY(-1px);
+}
+
+.wind-box, .lat-box { 
+    color: black;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 14px;
+    min-width: 9rem;
+    min-height: 9rem;
+    margin: 1rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    
+}
+
+.container-btm{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px)  {
+       .container-city {
+        width: 18rem;
+        height: 70vh;
+       }
+
+       .wind-box, .lat-box {
+        min-width: 3.5rem;
+        min-height: 3.5rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+       }
+       .wind-box p, .lat-box p{
+        margin: .2rem;
+        font-size: 12px;
+       }
+
+       .container-temp {
+        gap: 1rem;
+        font-size: 14px;
+        margin: 5px;
+        margin-bottom: 0;
+       }
+       .return-btn {
+        margin-top: .5rem;
+        width: 3rem;
+        height: 2rem;
+       }
+}
+
