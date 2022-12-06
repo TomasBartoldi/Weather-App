@@ -5,7 +5,7 @@
   "homepage": "https://github.com/TomasBartoldi/Weather-App",
   "scripts": {
     "dev": "vite",
-    "build": "build",
+    "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
